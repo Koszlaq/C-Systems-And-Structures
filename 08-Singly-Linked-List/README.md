@@ -15,6 +15,29 @@ This project goes beyond a simple stack/queue by implementing a full suite of li
 
 ---
 
+## 🎮 How to Use the Program (Menu Guide)
+
+Once compiled and executed, the program runs in a continuous loop. It will ask `Co chcesz zrobic?` (What do you want to do?). Enter a number from the list below and press Enter:
+
+* **`0`** - **Exit:** Safely frees all allocated memory and terminates the program.
+* **`1`** - **Push Back:** Add a new number to the **end** of the list.
+* **`2`** - **Pop Back:** Remove and print the number from the **end** of the list.
+* **`3`** - **Push Front:** Add a new number to the **beginning** of the list.
+* **`4`** - **Pop Front:** Remove and print the number from the **beginning** of the list.
+* **`5`** - **Insert at Index:** Add a number at a specific position. (You will be prompted for the number, then the index).
+* **`6`** - **Remove at Index:** Remove a number from a specific position. (You will be prompted for the index).
+* **`7`** - **Peek Back:** View the last number without removing it.
+* **`8`** - **Peek Front:** View the first number without removing it.
+* **`9`** - **Check if Empty:** Returns `1` if the list is empty, `0` otherwise.
+* **`10`** - **Get Size:** Displays the total number of elements currently in the list.
+* **`11`** - **Clear List:** Deletes all elements and resets the list to an empty state.
+* **`12`** - **Get Value at Index:** View the number at a specific position without removing it.
+* **`13`** - **Display All:** Prints all elements in the list from first to last.
+
+*(Note: The program handles invalid inputs, such as letters or out-of-bounds indices, without crashing).*
+
+---
+
 ## 🛠️ Project Structure
 
 * `linked_list.h` - Contains the `node_t` and `linked_list_t` struct definitions, along with 16 function prototypes.
