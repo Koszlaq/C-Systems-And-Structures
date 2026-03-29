@@ -18,6 +18,22 @@ This project is not just a standard stack; it was built with strict low-level co
 
 ---
 
+## 🎮 How to Use the Program (Menu Guide)
+
+Once compiled and executed, the program runs in a continuous loop. It will ask `Co chcesz zrobic?` (What do you want to do?). Enter a number from the list below and press Enter:
+
+* **`0`** - **Exit:** Safely frees all memory and terminates the program.
+* **`1`** - **Push:** Add a new element to the top of the stack. (The program will prompt you for an integer value).
+* **`2`** - **Pop:** Remove the top element from the stack and display its value. If the stack is empty, it prints `Stack is empty`.
+* **`3`** - **Display All:** Prints all elements currently on the stack. If the stack is empty, it prints `Stack is empty`.
+
+The program includes strict input validation and memory checking:
+* **Invalid Menu Choice:** Entering a number outside the menu options prints `Incorrect input data` and continues execution.
+* **Memory Allocation Failure:** If `malloc` or `realloc` fails to secure memory, the program prints `Failed to allocate memory` and immediately exits with error code `8`.
+* **Invalid Characters (Letters/Symbols):** If the user inputs non-numeric characters when a number is expected, the program instantly terminates, printing `Incorrect input`, and exits with error code `1`.
+
+---
+
 ## 🛠️ Project Structure
 
 * `stack.h` - Header file containing the `stack_t` structure definition and function prototypes.
